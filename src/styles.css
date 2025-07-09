@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme{
+
+     /* breakpoint */
+     --breakpoint-sm: 480px;
+     --breakpoint-md: 768px ;
+     --breakpoint-lg: 976px ;
+     --breakpoint-xl: 1400px ;
+
+     --color-bodyColor: hsl(300, 100%, 2%);
+     --color-sectionColor: hsl(300, 100%, 5%);
+     --color-cardColor: hsl(300, 100%, 10%);
+     --color-titleColor:hsl(300, 100%, 23%);
+     --color-textColor:hsl(0, 0%, 100%);
+
+     --font-Jost:"Jost", "sans-serif";
+     --font-DancingScript:"Dancing Script", "cursive";
+
+     
+     
+}
+@utility container{
+     @apply p-3 mx-auto md:p-8 xl:p-10;
+}
+
+html{
+     @apply scroll-smooth overflow-x-hidden
+}
+
+body{
+     @apply bg-bodyColor font-Jost text-textColor tracking-wider overflow-x-hidden;
+}
+
+section{
+     @apply py-16 md:py-28;
+}
+.nav-link{
+     @apply text-lg font-bold hover:text-titleColor duration-300;
+}
+
+/* active */
+.active{
+     @apply text-titleColor;
+}
+.btn{
+     @apply border text-lg lg:text-2xl font-bold px-5 py-3 duration-300;
+}
+.btn2{
+     @apply border text-lg lg:text-xl font-bold px-3 py-2 duration-300;
+}
+.btn:hover, .btn2:hover{
+     @apply bg-titleColor;
+}
+
+.title{
+     @apply text-4xl font-bold inline-block font-DancingScript;
+}
+.subtitle{
+     @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+.cardtitle{
+     @apply text-2xl md:text-3xl font-bold;
+}
+.cardtitle-2{
+     @apply text-xl md:text-2xl xl:text-3xl font-bold;
+}
+.cardtitle-2{
+
+}
+
